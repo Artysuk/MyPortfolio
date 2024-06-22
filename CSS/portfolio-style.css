@@ -2,5 +2,36 @@ html{
     background: rgb(234, 204, 143);
 }
 footer{
-    background: rgb(204, 195, 195);
+    background-color: rgb(188, 167, 132);
+}
+#portrait{
+    box-shadow: 2px 2px 4px rgb(0, 0, 2);
+}
+.heading{
+    background-color: antiquewhite;
+    color:cadetblue;
+}
+#skills{
+    color:rgb(79, 79, 79);
+}
+#working-experience{
+    font-size: large;
+    font-weight: bold;
+    font-variant: small-caps;
+}
+#copyrights{
+    font-size: medium;
+    font-weight:lighter;
+    font-style:oblique;
+
+}
+#instagram-logo{
+    height: 30px;
+    align-items: end;
+    text-align: right;
+}
+#linkedin-logo{
+    height: 30px;
+    align-items: end;
+    text-align: right;
 }
