@@ -1,114 +1,4 @@
-.container{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-.first{
-    font-family: "Playwrite CU", cursive;
-    color: white;
-    font-size: xx-large;
-}
-h3{
-    color: rgb(15, 189, 157);
-    font-family: "Playwrite CU", sans-serif;
-    font-size: x-large;
-}
-.second{
-    color:white
-} 
-
-.body{
-    background-color: rgb(255, 255, 255);
-    width: 70%;
-    height: 90%;
-    margin-left: 30vh;
-    margin-top: 10vh;
-    border-radius: 20px;
-}
-
-.body-container{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-}
-
-.me-image{
-    margin-top: 100px;
-    border-radius: 70px;
-}
-
-.second-body, .fourth-body,.sixth-body, .seventh-body{
-    font-size: 80px;
-    color: rgb(15, 189, 157);
-    font-family: "Georgia", sans-serif;
-    margin-top: 30px;
-}
-.third-body{
-    font-size: x-large;
-    font-family: "Georgia", sans-serif;
-    margin-top: 30px;
-    text-align: center;
-    
-}
-
-.fourth-body{
-    margin-top: 100px;
-    font-size: 50px;
-}
-.fifth-body{
-    margin-top: 100px;
-    font-family: "Georgia", sans-serif;
-}
-
-.grid-container{
-    display: grid;
-    grid-template-columns: 1fr 3fr;
-    grid-template-rows: repeat(1fr, 2);
-    grid-column-gap: 30px;
-    grid-row-gap: 40px;
-    font-size: larger;
-
-}
-.seventh-body, .eight-body{
-    font-size: large;
-    color: rgb(3, 87, 69);
-    font-weight: bold;
-}
-.eight-body{
-    color: black;
-    font-weight: normal;
-    margin-top: 10px;
-}
-.ninth-body{
-    margin-top: 30px;
-    margin-bottom: 20px;
-}
-
-.containter-footer{
-    display: flex;
-    flex-direction: row;
-}
-
-.insta{
-    text-align: left;
-    margin-right: 1px
-}
-.linkedin{
-    text-align: left;
-    margin-right: 500px;
-}
-.gmail-button{
-    margin-right: 600px;
-}
-
-
-
-
-
-
+/* General Styles */
 body {
     margin: auto;
     font-family: -apple-system, BlinkMacSystemFont, sans-serif;
@@ -117,6 +7,7 @@ body {
     animation: gradient 15s ease infinite;
     background-size: 400% 400%;
     background-attachment: fixed;
+    transition: background 0.5s ease;
 }
 
 @keyframes gradient {
@@ -129,6 +20,124 @@ body {
     100% {
         background-position: 0% 0%;
     }
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.first {
+    font-family: "Playwrite CU", cursive;
+    color: white;
+    font-size: xx-large;
+    transition: color 0.3s ease;
+}
+
+h3 {
+    color: rgb(15, 189, 157);
+    font-family: "Playwrite CU", sans-serif;
+    font-size: x-large;
+    transition: color 0.3s ease;
+}
+
+.second {
+    color: white;
+}
+
+.body {
+    background-color: rgba(255, 255, 255, 0.8);
+    width: 70%;
+    height: 90%;
+    margin: 10vh auto;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.body-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.me-image {
+    margin-top: 20px;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.second-body,
+.fourth-body,
+.sixth-body,
+.seventh-body {
+    font-size: 30px;
+    color: rgb(15, 189, 157);
+    font-family: "Georgia", sans-serif;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.third-body {
+    font-size: x-large;
+    font-family: "Georgia", sans-serif;
+    margin-top: 30px;
+    text-align: center;
+    line-height: 1.6;
+}
+
+.fourth-body {
+    margin-top: 50px;
+    font-size: 40px;
+}
+
+.fifth-body {
+    margin-top: 50px;
+    font-family: "Georgia", sans-serif;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 30px;
+    font-size: larger;
+}
+
+.seventh-body,
+.eight-body {
+    font-size: large;
+    color: rgb(3, 87, 69);
+    font-weight: bold;
+}
+
+.eight-body {
+    color: black;
+    font-weight: normal;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.ninth-body {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.insta,
+.linkedin,
+.gmail-button {
+    margin: 10px;
+    transition: transform 0.3s ease;
+}
+
+.insta:hover,
+.linkedin:hover,
+.gmail-button:hover {
+    transform: scale(1.1);
 }
 
 .wave {
@@ -161,19 +170,15 @@ body {
     2% {
         transform: translateX(1);
     }
-
     25% {
         transform: translateX(-25%);
     }
-
     50% {
         transform: translateX(-50%);
     }
-
     75% {
         transform: translateX(-25%);
     }
-
     100% {
         transform: translateX(1);
     }
